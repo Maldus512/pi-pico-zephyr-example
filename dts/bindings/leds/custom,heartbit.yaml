@@ -1,0 +1,14 @@
+description: |
+    Heartbit driver
+
+compatible: "heartbit"
+properties:
+  on_time:
+    type: int
+    required: true
+  off_time:
+    type: int
+    required: true
+  gpios:
+    type: phandle-array
+    required: true

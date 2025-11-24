@@ -1,0 +1,17 @@
+/ {
+    aliases {
+        heartbit0 = &heartbit0;
+    };
+
+    heartbit0: heartbit_node {
+        status = "okay";
+        compatible = "custom,heartbit";
+        on_time = <100>;
+        off_time = <900>;
+        gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+    };
+
+    leds {
+        status = "disabled";
+    };
+};
