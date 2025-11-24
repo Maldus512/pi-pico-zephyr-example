@@ -1,7 +1,7 @@
 description: |
     Heartbit driver
 
-compatible: "heartbit"
+compatible: "custom,heartbit"
 properties:
   on_time:
     type: int
